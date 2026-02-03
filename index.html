@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAMERTASS - Palang Merah Remaja SMAN 17 Surabaya</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header-jkt">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo-section">
+                    <h1 class="logo">PAMERTASS</h1>
+                    <p class="logo-sub">Palang Merah Remaja SMAN 17 Surabaya</p>
+                </div>
+                <div class="header-actions">
+                    <a href="member/login.html" class="btn-login">Login</a>
+                    <a href="member/register.html" class="btn-register">Register</a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="#news"><i class="fas fa-newspaper"></i> News</a>
+                <a href="schedule.html"><i class="fas fa-calendar-alt"></i> Schedule</a>
+                <a href="member/list.html"><i class="fas fa-users"></i> Member</a>
+                <a href="attendance.html"><i class="fas fa-qrcode"></i> Absen QR</a>
+                <a href="medicine.html"><i class="fas fa-pills"></i> Data Obat</a>
+                <a href="admin/login.html" class="admin-link"><i class="fas fa-user-shield"></i> Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-jkt">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">PAMERTASS SMAN 17 SURABAYA</h2>
+                <p class="hero-subtitle">Organisasi Palang Merah Remaja - Wadah Pengembangan Diri & Sosial</p>
+                
+                <div class="hero-bonus">
+                    <div class="bonus-item">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>PERTOLONGAN PERTAMA</span>
+                    </div>
+                    <div class="bonus-item">
+                        <i class="fas fa-hand-holding-medical"></i>
+                        <span>PELATIHAN RUTIN</span>
+                    </div>
+                    <div class="bonus-item">
+                        <i class="fas fa-users"></i>
+                        <span>KOMUNITAS AKTIF</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="member/register.html" class="btn-hero-primary">
+                        <i class="fas fa-user-plus"></i> Daftar Menjadi Anggota
+                    </a>
+                    <a href="#about" class="btn-hero-secondary">
+                        <i class="fas fa-info-circle"></i> Pelajari Lebih Lanjut
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-section" id="news">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-newspaper"></i> NEWS
+            </h2>
+            
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-category announcement">ANNOUNCEMENT</div>
+                    <div class="news-date">5 Februari 2026</div>
+                    <h3 class="news-title">Pengumuman Jadwal Latihan Rutin Bulan Februari</h3>
+                    <p class="news-excerpt">Jadwal latihan rutin PAMERTASS untuk bulan Februari 2026 telah ditetapkan. Silakan cek di menu Schedule.</p>
+                    <a href="#" class="news-readmore">Read More →</a>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-category event">EVENT</div>
+                    <div class="news-date">3 Februari 2026</div>
+                    <h3 class="news-title">Pelatihan Pertolongan Pertama Tingkat Dasar</h3>
+                    <p class="news-excerpt">Akan diadakan pelatihan pertolongan pertama untuk anggota baru pada 15 Februari 2026.</p>
+                    <a href="#" class="news-readmore">Read More →</a>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-category info">INFO</div>
+                    <div class="news-date">1 Februari 2026</div>
+                    <h3 class="news-title">Update Stok Obat PMR Terbaru</h3>
+                    <p class="news-excerpt">Telah dilakukan update stok obat di ruang PMR. Cek ketersediaan obat di menu Data Obat.</p>
+                    <a href="#" class="news-readmore">Read More →</a>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-category announcement">ANNOUNCEMENT</div>
+                    <div class="news-date">28 Januari 2026</div>
+                    <h3 class="news-title">Sistem Absensi QR Code Resmi Diluncurkan</h3>
+                    <p class="news-excerpt">Mulai Februari 2026, absensi menggunakan QR Code. Setiap anggota memiliki QR unik.</p>
+                    <a href="#" class="news-readmore">Read More →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="qr-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-qrcode"></i> ABSENSI QR CODE
+            </h2>
+            <div class="qr-container">
+                <div class="qr-display" id="qrDisplay"></div>
+                <div class="qr-info">
+                    <h3>Scan QR Code untuk Absensi</h3>
+                    <p>Sistem absensi digital menggunakan QR Code untuk presensi latihan rutin</p>
+                    <div class="qr-instruction">
+                        <div class="step">
+                            <span class="step-number">1</span>
+                            <p>Login ke akun anggota</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">2</span>
+                            <p>Buka halaman "My Page"</p>
+                        </div>
+                        <div class="step">
+                            <span class="step-number">3</span>
+                            <p>Tampilkan QR Code ke admin</p>
+                        </div>
+                    </div>
+                    <div class="qr-buttons">
+                        <a href="member/login.html" class="btn-qr-login">
+                            <i class="fas fa-sign-in-alt"></i> Login Sekarang
+                        </a>
+                        <a href="attendance.html" class="btn-qr-scan">
+                            <i class="fas fa-camera"></i> Scan QR Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-info-circle"></i> TENTANG PAMERTASS
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Palang Merah Remaja SMAN 17 Surabaya</h3>
+                    <p>PAMERTASS merupakan organisasi Palang Merah Remaja di SMAN 17 Surabaya yang bergerak dalam bidang kesehatan, kemanusiaan, dan kepalangmerahan.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Pelatihan Rutin</h4>
+                            <p>Pertolongan pertama, P3K, dan evakuasi</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <h4>Bakti Sosial</h4>
+                            <p>Aksi kemanusiaan dan donor darah</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Komunitas Aktif</h4>
+                            <p>Anggota dari kelas X, XI, dan XII</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Anggota Aktif</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Kegiatan/Tahun</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Pos Kesehatan</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Sertifikasi PMR</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-jkt">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>PAMERTASS</h3>
+                    <p>PMR SMAN 17 Surabaya</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Menu Utama</h4>
+                        <a href="index.html">Home</a>
+                        <a href="#news">News</a>
+                        <a href="schedule.html">Schedule</a>
+                        <a href="member/list.html">Member</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Fitur</h4>
+                        <a href="attendance.html">Absen QR</a>
+                        <a href="medicine.html">Data Obat</a>
+                        <a href="member/login.html">Login</a>
+                        <a href="admin/login.html">Admin</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2026 PAMERTASS SMAN 17 Surabaya. All rights reserved.</p>
+                <p class="system-version">System v1.0.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/qrcode.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if(document.getElementById('qrDisplay')) {
+                new QRCode(document.getElementById('qrDisplay'), {
+                    text: "PAMERTASS-WELCOME-2026",
+                    width: 180,
+                    height: 180,
+                    colorDark: "#c62828",
+                    colorLight: "#ffffff"
+                });
+            }
+        });
+    </script>
+</body>
+</html>

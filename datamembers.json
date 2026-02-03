@@ -1,0 +1,69 @@
+{
+  "members": [
+    {
+      "id": "PMR-2026-001",
+      "nis": "202312345",
+      "name": "Rayhan Pratama",
+      "kelas": "XII IPA 1",
+      "email": "rayhan@sman17.sch.id",
+      "phone": "081234567890",
+      "division": "Pertolongan Pertama",
+      "joinDate": "2025-08-15",
+      "attendanceCount": 25,
+      "status": "active",
+      "role": "member"
+    },
+    {
+      "id": "PMR-2026-002",
+      "nis": "202312346",
+      "name": "Siti Rahayu",
+      "kelas": "XI IPS 2",
+      "email": "siti@sman17.sch.id",
+      "phone": "081234567891",
+      "division": "Logistik & Obat",
+      "joinDate": "2025-09-10",
+      "attendanceCount": 18,
+      "status": "active",
+      "role": "member"
+    },
+    {
+      "id": "PMR-2026-003",
+      "nis": "202312347",
+      "name": "Budi Santoso",
+      "kelas": "X IPA 1",
+      "email": "budi@sman17.sch.id",
+      "phone": "081234567892",
+      "division": "Humas & Dokumentasi",
+      "joinDate": "2025-10-05",
+      "attendanceCount": 12,
+      "status": "active",
+      "role": "member"
+    },
+    {
+      "id": "PMR-2026-004",
+      "nis": "202312348",
+      "name": "Ani Susanti",
+      "kelas": "XI IPS 2",
+      "email": "ani@sman17.sch.id",
+      "phone": "081234567893",
+      "division": "Tim Evakuasi",
+      "joinDate": "2025-11-20",
+      "attendanceCount": 8,
+      "status": "active",
+      "role": "member"
+    },
+    {
+      "id": "PMR-2026-005",
+      "nis": "202312349",
+      "name": "Cici Rahmawati",
+      "kelas": "XII IPA 3",
+      "email": "cici@sman17.sch.id",
+      "phone": "081234567894",
+      "division": "Pertolongan Pertama",
+      "joinDate": "2025-12-01",
+      "attendanceCount": 15,
+      "status": "active",
+      "role": "member"
+    }
+  ]
+}

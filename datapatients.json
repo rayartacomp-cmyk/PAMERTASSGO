@@ -1,0 +1,64 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "date": "2026-02-05",
+      "time": "10:30",
+      "name": "Ani Susanti",
+      "kelas": "XI IPS 2",
+      "complaint": "Demam, sakit kepala",
+      "medicineGiven": "Paracetamol 500mg - 1 tablet",
+      "treatment": "Istirahat di ruang PMR, diberi air mineral",
+      "attendant": "Rayhan (PMR)",
+      "notes": "Suhu tubuh 38.2°C, dianjurkan pulang jika tidak membaik"
+    },
+    {
+      "id": 2,
+      "date": "2026-02-04",
+      "time": "13:45",
+      "name": "Budi Santoso",
+      "kelas": "X IPA 1",
+      "complaint": "Luka lecet di lutut",
+      "medicineGiven": "Betadine, plester luka",
+      "treatment": "Dibersihkan dengan betadine, diberikan plester",
+      "attendant": "Siti (PMR)",
+      "notes": "Luka ringan akibat terjatuh saat olahraga"
+    },
+    {
+      "id": 3,
+      "date": "2026-02-03",
+      "time": "11:20",
+      "name": "Cici Rahmawati",
+      "kelas": "XII IPA 3",
+      "complaint": "Pusing, mual",
+      "medicineGiven": "Oralit - 1 sachet",
+      "treatment": "Diberikan oralit, istirahat 30 menit",
+      "attendant": "Rina (PMR)",
+      "notes": "Kemungkinan dehidrasi, dianjurkan banyak minum air"
+    },
+    {
+      "id": 4,
+      "date": "2026-02-02",
+      "time": "09:15",
+      "name": "Dedi Wijaya",
+      "kelas": "XI IPA 2",
+      "complaint": "Sakit perut",
+      "medicineGiven": "Tidak diberikan obat",
+      "treatment": "Istirahat, kompres hangat",
+      "attendant": "Budi (PMR)",
+      "notes": "Sakit ringan, membaik setelah istirahat"
+    },
+    {
+      "id": 5,
+      "date": "2026-02-01",
+      "time": "14:30",
+      "name": "Eka Putri",
+      "kelas": "X IPS 1",
+      "complaint": "Mimisan",
+      "medicineGiven": "Kapas, es batu",
+      "treatment": "Duduk tegak, tekan hidung, kompres es",
+      "attendant": "Ani (PMR)",
+      "notes": "Mimisan berhenti setelah 10 menit"
+    }
+  ]
+}

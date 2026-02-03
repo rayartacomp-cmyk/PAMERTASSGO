@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PAMERTASS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <div class="logo">
+                    <h1>PAMERTASS</h1>
+                    <p>Palang Merah Remaja SMAN 17 Surabaya</p>
+                </div>
+                <div class="auth-links">
+                    <a href="index.html">Home</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <h2>Login</h2>
+                <p>Bagian bertanda * harus diisi.</p>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Alamat email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Kata sandi *</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <a href="forgot-password.html" style="color: #e63946;">Lupa password ></a>
+                    </div>
+                    
+                    <div class="form-group">
+                        <a href="register.html" style="color: #e63946;">Bagi yang pertama kali ></a>
+                    </div>
+                    
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                
+                <div id="message" style="margin-top: 20px; color: red;"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 PAMERTASS - PMR SMAN 17 Surabaya</p>
+        </footer>
+    </div>
+
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        // Handle login form submission
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const message = document.getElementById('message');
+            
+            try {
+                await login(email, password);
+                window.location.href = 'mypage.html';
+            } catch (error) {
+                message.textContent = error.message;
+            }
+        });
+    </script>
+</body>
+</html>

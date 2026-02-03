@@ -1,7 +1,5 @@
 # 🏥 PAMERTASS Website
 
-Website resmi Palang Merah Remaja SMAN 17 Surabaya dengan desain mirip JKT48.com
-
 ## 🚀 Fitur Utama
 
 ### 1. **Sistem Anggota**

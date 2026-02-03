@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - PAMERTASS</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header-jkt admin-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo-section">
+                    <h1 class="logo">PAMERTASS ADMIN</h1>
+                    <p class="logo-sub">Panel Administrator</p>
+                </div>
+                <div class="header-actions">
+                    <span class="admin-welcome">Admin: <strong id="adminName">Budi Santoso</strong></span>
+                    <a href="logout.html" class="btn-logout">Logout</a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a href="scan-qr.html"><i class="fas fa-qrcode"></i> Scan QR Absen</a>
+                <a href="manage-members.html"><i class="fas fa-users-cog"></i> Kelola Anggota</a>
+                <a href="manage-schedule.html"><i class="fas fa-calendar-plus"></i> Kelola Jadwal</a>
+                <a href="manage-medicine.html"><i class="fas fa-pills"></i> Kelola Obat</a>
+                <a href="reports.html"><i class="fas fa-chart-bar"></i> Laporan</a>
+                <a href="../index.html" class="back-site"><i class="fas fa-external-link-alt"></i> Ke Website</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1><i class="fas fa-tachometer-alt"></i> Dashboard Admin</h1>
+                <p>Kelola semua aktivitas PAMERTASS SMAN 17 Surabaya</p>
+                <div class="last-login">
+                    <i class="fas fa-clock"></i> Login terakhir: 5 Feb 2026, 14:30
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card stat-members">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Total Anggota</h3>
+                        <div class="stat-number">47</div>
+                        <div class="stat-change">+3 bulan ini</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card stat-attendance">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Kehadiran Hari Ini</h3>
+                        <div class="stat-number">32/47</div>
+                        <div class="stat-change">68% hadir</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card stat-medicine">
+                    <div class="stat-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Stok Obat</h3>
+                        <div class="stat-number">28 Item</div>
+                        <div class="stat-change">5 hampir habis</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card stat-patients">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-injured"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Pasien Bulan Ini</h3>
+                        <div class="stat-number">15</div>
+                        <div class="stat-change">-2 dari bulan lalu</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="quick-actions-section">
+                <h2><i class="fas fa-bolt"></i> Quick Actions</h2>
+                <div class="action-buttons">
+                    <a href="scan-qr.html" class="action-btn primary">
+                        <i class="fas fa-qrcode"></i>
+                        <span>Scan QR Absensi</span>
+                    </a>
+                    <a href="manage-members.html" class="action-btn">
+                        <i class="fas fa-user-plus"></i>
+                        <span>Tambah Anggota Baru</span>
+                    </a>
+                    <a href="manage-schedule.html" class="action-btn">
+                        <i class="fas fa-calendar-plus"></i>
+                        <span>Tambahkan Jadwal</span>
+                    </a>
+                    <a href="manage-medicine.html" class="action-btn">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Tambah Stok Obat</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="recent-activities">
+                <h2><i class="fas fa-history"></i> Aktivitas Terbaru</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon success">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Absensi QR berhasil discan</h4>
+                            <p>Rayhan (XII IPA 1) melakukan absensi latihan rutin</p>
+                            <span class="activity-time">5 Feb 2026, 15:05</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Stok obat hampir habis</h4>
+                            <p>Paracetamol tinggal 5 strip (minimal 10)</p>
+                            <span class="activity-time">5 Feb 2026, 10:30</span>
+                        </div>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon info">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Anggota baru ditambahkan</h4>
+                            <p>Siti Rahayu (X IPA 3) bergabung dengan PAMERTASS</p>
+                            <span class="activity-time">4 Feb 2026, 14:15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-jkt">
+        <div class="container">
+            <div class="footer-copyright">
+                <p>&copy; 2026 PAMERTASS SMAN 17 Surabaya - Admin Panel v1.0</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!sessionStorage.getItem('adminLoggedIn')) {
+                window.location.href = 'login.html';
+            }
+            
+            const adminName = sessionStorage.getItem('adminUsername') || 'Admin';
+            document.getElementById('adminName').textContent = adminName;
+        });
+    </script>
+</body>
+</html>

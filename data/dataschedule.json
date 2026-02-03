@@ -1,0 +1,54 @@
+{
+  "schedule": [
+    {
+      "id": 1,
+      "date": "2026-02-05",
+      "time": "15:00-17:00",
+      "title": "Latihan Rutin Pertolongan Pertama",
+      "description": "Latihan dasar pertolongan pertama untuk semua anggota",
+      "location": "Ruang PMR",
+      "participants": "Semua Anggota",
+      "type": "routine"
+    },
+    {
+      "id": 2,
+      "date": "2026-02-09",
+      "time": "15:00-17:00",
+      "title": "Latihan Rutin P3K Lanjutan",
+      "description": "Latihan pertolongan pertama pada kecelakaan tingkat lanjut",
+      "location": "Ruang PMR",
+      "participants": "Divisi Pertolongan Pertama",
+      "type": "training"
+    },
+    {
+      "id": 3,
+      "date": "2026-02-11",
+      "time": "14:00-16:00",
+      "title": "Pelatihan Evakuasi Korban",
+      "description": "Teknik evakuasi korban dalam kondisi darurat",
+      "location": "Lapangan Sekolah",
+      "participants": "Semua Anggota",
+      "type": "training"
+    },
+    {
+      "id": 4,
+      "date": "2026-02-13",
+      "time": "15:30-17:30",
+      "title": "Simulasi Bencana Alam",
+      "description": "Simulasi penanganan bencana alam di area sekolah",
+      "location": "Area Sekolah",
+      "participants": "Semua Anggota + OSIS",
+      "type": "event"
+    },
+    {
+      "id": 5,
+      "date": "2026-02-15",
+      "time": "14:00-16:00",
+      "title": "Rapat Evaluasi Bulanan",
+      "description": "Rapat evaluasi kegiatan bulan Februari",
+      "location": "Ruang PMR",
+      "participants": "Pengurus Inti",
+      "type": "meeting"
+    }
+  ]
+}
